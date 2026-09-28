@@ -2,177 +2,176 @@ import './App.css'
 
 function App() {
   return (
-    <main>
-      <nav className="navbar">
-        <div className="logo">MC.</div>
+    <>
+      <header>
+        <nav>
+          <h2>Mabel Cobbinah</h2>
 
-        <div className="nav-links">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-
-      <section className="hero-section">
-        <div className="hero-content">
-          <p className="eyebrow">HELLO, I'M</p>
-
-          <h1>
-            Mabel <span>Cobbinah</span>
-          </h1>
-
-          <h2>Computer Science & Engineering Student</h2>
-
-          <p className="hero-description">
-            I am passionate about technology, web development and creating
-            digital solutions that make a meaningful difference.
-          </p>
-
-          <div className="hero-buttons">
-            <a href="#projects" className="primary-button">
-              View My Work →
-            </a>
-
-            <a href="#contact" className="secondary-button">
-              Let's Connect
-            </a>
+          <div className="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
           </div>
-        </div>
+        </nav>
+      </header>
 
-        <div className="hero-decoration">
-          <div className="glow-circle"></div>
-          <div className="code-card">
-            <span>&lt;</span>
-            <strong>developer</strong>
-            <span>/&gt;</span>
-          </div>
-        </div>
-      </section>
+      <main>
+        <section className="hero">
+          <div>
+            <p className="intro">HELLO, I'M</p>
 
-      <section id="about" className="section">
-        <div className="section-heading">
-          <span>01</span>
-          <h2>About Me</h2>
-        </div>
+            <h1>
+              Mabel <span>Cobbinah</span>
+            </h1>
 
-        <div className="about-card">
-          <p>
-            I am a Computer Science and Engineering student with an interest
-            in web development, software engineering and emerging
-            technologies. I enjoy learning new technologies and turning ideas
-            into practical digital experiences.
-          </p>
+            <h2>Computer Science & Engineering Student</h2>
 
-          <p>
-            This portfolio is a reflection of my journey, skills and projects
-            as I continue developing as a technology professional.
-          </p>
-        </div>
-      </section>
-
-      <section id="skills" className="section">
-        <div className="section-heading">
-          <span>02</span>
-          <h2>My Skills</h2>
-        </div>
-
-        <div className="skills-grid">
-          <div className="skill-card">
-            <div className="skill-number">01</div>
-            <h3>HTML & CSS</h3>
-            <p>Creating responsive and visually appealing web interfaces.</p>
-          </div>
-
-          <div className="skill-card">
-            <div className="skill-number">02</div>
-            <h3>JavaScript</h3>
-            <p>Building interactive and dynamic web experiences.</p>
-          </div>
-
-          <div className="skill-card">
-            <div className="skill-number">03</div>
-            <h3>React</h3>
-            <p>Developing modern component-based web applications.</p>
-          </div>
-
-          <div className="skill-card">
-            <div className="skill-number">04</div>
-            <h3>Problem Solving</h3>
-            <p>Approaching technical challenges with creativity and logic.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" className="section">
-        <div className="section-heading">
-          <span>03</span>
-          <h2>Featured Projects</h2>
-        </div>
-
-        <div className="projects-grid">
-          <article className="project-card featured">
-            <div className="project-top">
-              <span>PROJECT 01</span>
-              <span>↗</span>
-            </div>
-
-            <h3>Crop Disease Detection</h3>
-
-            <p>
-              A deep learning project focused on detecting crop diseases using
-              pretrained models and real-field agricultural images.
+            <p className="hero-description">
+              I am passionate about technology and building useful digital
+              solutions. Welcome to my portfolio, where you can explore my
+              skills and projects.
             </p>
 
-            <div className="tags">
-              <span>Python</span>
-              <span>Deep Learning</span>
-              <span>Computer Vision</span>
-            </div>
-          </article>
+            <div className="hero-buttons">
+              <a href="#projects" className="primary-button">
+                View My Projects
+              </a>
 
-          <article className="project-card">
-            <div className="project-top">
-              <span>PROJECT 02</span>
-              <span>↗</span>
+              <a href="#contact" className="secondary-button">
+                Let's Connect
+              </a>
             </div>
+          </div>
 
-            <h3>EventFinder Management</h3>
+          <div className="hero-card">
+            <div className="circle">MC</div>
+
+            <p>COMPUTER SCIENCE & ENGINEERING</p>
+
+            <h3>
+              Building ideas
+              <br />
+              into digital solutions.
+            </h3>
+
+            <div className="card-line"></div>
+
+            <small>Web Development • Technology • Software</small>
+          </div>
+        </section>
+
+        <section id="about">
+          <div>
+            <p className="section-label">01 — ABOUT</p>
+            <h2>
+              A little bit
+              <br />
+              <span>about me.</span>
+            </h2>
+          </div>
+
+          <div className="about-content">
+            <p>
+              I am a Computer Science & Engineering student interested in
+              technology, web development, and creating solutions through
+              software.
+            </p>
+          </div>
+        </section>
+
+        <section id="skills">
+          <p className="section-label">02 — SKILLS</p>
+
+          <h2>What I work with.</h2>
+
+          <div className="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Git & GitHub</span>
+          </div>
+        </section>
+
+        <section id="projects">
+          <div className="projects-heading">
+            <div>
+              <p className="section-label">03 — PROJECTS</p>
+              <h2>
+                Things I've
+                <br />
+                <span>built.</span>
+              </h2>
+            </div>
 
             <p>
-              A web-based project designed to help users discover and manage
-              events through a simple digital platform.
+              A selection of projects that represent my learning, creativity,
+              and interest in technology.
             </p>
+          </div>
 
-            <div className="tags">
-              <span>React</span>
-              <span>JavaScript</span>
-              <span>Web Development</span>
-            </div>
-          </article>
-        </div>
-      </section>
+          <div className="projects">
+            <article className="project-card featured">
+              <p className="project-number">01</p>
+              <p className="project-type">WEB DEVELOPMENT</p>
 
-      <section id="contact" className="contact-section">
-        <p className="eyebrow">HAVE A PROJECT IN MIND?</p>
+              <h3>Personal Portfolio</h3>
 
-        <h2>Let's create something<br />great together.</h2>
+              <p>
+                A personal portfolio website built with React and Vite to
+                showcase my skills and projects.
+              </p>
+            </article>
 
-        <p>
-          I'm always open to learning, collaborating and exploring new
-          opportunities in technology.
-        </p>
+            <article className="project-card">
+              <p className="project-number">02</p>
+              <p className="project-type">SOFTWARE PROJECT</p>
 
-        <a href="mailto:your-email@example.com" className="primary-button">
-          Get In Touch →
-        </a>
-      </section>
+              <h3>EventFinder Management</h3>
+
+              <p>
+                A project focused on helping users find and manage events.
+              </p>
+            </article>
+
+            <article className="project-card">
+              <p className="project-number">03</p>
+              <p className="project-type">MACHINE LEARNING</p>
+
+              <h3>Crop Disease Detection</h3>
+
+              <p>
+                A machine learning project focused on detecting crop diseases
+                using pretrained deep learning models.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact">
+          <p className="section-label">04 — CONTACT</p>
+
+          <h2>Let's Connect</h2>
+
+          <p>
+            If you would like to know more about my work or discuss an
+            opportunity, feel free to get in touch.
+          </p>
+
+          <a
+            href="mailto:your-email@example.com"
+            className="primary-button"
+          >
+            Contact Me
+          </a>
+        </section>
+      </main>
 
       <footer>
-        <p>© 2026 Mabel Cobbinah</p>
-        <p>Built with React & curiosity.</p>
+        <p>© 2026 Mabel Cobbinah. All rights reserved.</p>
       </footer>
-    </main>
+    </>
   )
 }
 
