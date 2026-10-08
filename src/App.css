@@ -3,12 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
-  --brown-dark: var(--brown-dark);
-  --cream: var(--cream);
-  --orange: var(--orange);
-  --brown-light: var(--brown-light);
+  --brown-dark: #1A110D;     /* Deep Espresso (Main Background) */
+  --brown-light: #D4C4B7;    /* Muted Taupe (Secondary Text) */
+  --cream: #FDFBF7;          /* Off-White (Main Text) */
+  --orange: #E86A33;         /* Vibrant Burnt Orange (Accent) */
+  --card-bg: #2E201A;        /* Dark Brown for Cards */
+  --card-border: #4B3328;    /* Border color for Cards */
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -31,7 +35,7 @@ header {
   top: 0;
   z-index: 1000;
   background: var(--brown-dark);
-  border-bottom: 1px solid #4b3328;
+  border-bottom: 1px solid var(--card-border);
 }
 
 nav {
@@ -61,7 +65,7 @@ nav h2 span {
 
 .nav-links a {
   display: inline-block;
-  color: #d9c6b4 !important;
+  color: var(--brown-light) !important;
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
@@ -81,7 +85,7 @@ nav h2 span {
   align-items: center;
   gap: 70px;
   background:
-    radial-gradient(circle at 75% 30%, #493024 0, transparent 32%),
+    radial-gradient(circle at 75% 30%, #2E201A 0, transparent 32%),
     var(--brown-dark);
 }
 
@@ -94,7 +98,7 @@ nav h2 span {
 }
 
 .hero h1 {
-  color: #f7eadb;
+  color: var(--cream);
   font-size: clamp(55px, 7vw, 90px);
   line-height: 0.92;
   letter-spacing: -5px;
@@ -104,6 +108,7 @@ nav h2 span {
 .hero h1 span {
   color: var(--orange);
 }
+
 .hero h2 {
   color: var(--cream);
   font-size: 32px;
@@ -159,11 +164,11 @@ nav h2 span {
   min-height: 390px;
   padding: 35px;
   border-radius: 24px;
-  background: #3a271f;
-  color: #f7eadb;
+  background: var(--card-bg);
+  color: var(--cream);
   position: relative;
   overflow: hidden;
-  border: 1px solid #5b3b2c;
+  border: 1px solid var(--card-border);
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
 }
 
@@ -173,9 +178,10 @@ nav h2 span {
   width: 230px;
   height: 230px;
   border-radius: 50%;
-  background: #c65d2e;
+  background: var(--orange);
   right: -85px;
   top: -75px;
+  opacity: 0.8;
 }
 
 .circle {
@@ -194,7 +200,7 @@ nav h2 span {
 .hero-card p {
   font-size: 11px;
   letter-spacing: 3px;
-  color: #cdb7a4;
+  color: var(--brown-light);
 }
 
 .hero-card h3 {
@@ -206,12 +212,12 @@ nav h2 span {
 .card-line {
   width: 100%;
   height: 1px;
-  background: #654536;
+  background: var(--card-border);
   margin-bottom: 15px;
 }
 
 .hero-card small {
-  color: #cdb7a4;
+  color: var(--brown-light);
 }
 
 /* GENERAL SECTIONS */
@@ -242,8 +248,8 @@ section h2 span {
 /* ABOUT */
 
 #about {
-  background: #2e201a;
-  border-top: 1px solid #4b3328;
+  background: var(--card-bg);
+  border-top: 1px solid var(--card-border);
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
   gap: 100px;
@@ -268,40 +274,34 @@ section h2 span {
 .skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
+  gap: 14px;
   margin-top: 10px;
 }
 
 #skills .section-label {
-  color: #4b2b1c;
+  color: var(--orange);
 }
 
 #skills h2 {
-  color: #2b1b15;
+  color: var(--cream);
   margin-bottom: 35px;
 }
 
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-}
-
 .skills span {
-  background: #f0ddc4;
-  border: 1px solid #ad855d;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   padding: 15px 25px;
   border-radius: 50px;
-  color: #3c281d;
+  color: var(--cream);
   font-weight: 700;
   font-size: 15px;
   transition: 0.3s;
 }
 
 .skills span:hover {
-  background: #3c281d;
-  color: #f0ddc4;
-  border-color: #3c281d;
+  background: var(--orange);
+  color: var(--brown-dark);
+  border-color: var(--orange);
   transform: translateY(-4px);
 }
 
@@ -309,7 +309,7 @@ section h2 span {
 
 #projects {
   background: var(--brown-dark);
-  border-top: 1px solid #4b3328;
+  border-top: 1px solid var(--card-border);
 }
 
 .projects-heading {
@@ -332,9 +332,9 @@ section h2 span {
 }
 
 .project-card {
-  background: #f0ddc4;
-  color: #2b1b15;
-  border: 1px solid #6b4938;
+  background: var(--card-bg);
+  color: var(--cream);
+  border: 1px solid var(--card-border);
   border-radius: 18px;
   padding: 35px;
   min-height: 280px;
@@ -347,52 +347,42 @@ section h2 span {
 .project-card:hover {
   transform: translateY(-8px);
   border-color: var(--orange);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
 }
 
 .project-card.featured {
-  background: var(--orange);
-  color: var(--brown-dark);
+  background: var(--card-bg);
+  color: var(--cream);
   grid-row: span 2;
+  border-color: var(--orange);
 }
 
 .project-number {
-  color: #8e3d20;
+  color: var(--orange);
   font-weight: 800;
   font-size: 14px;
   margin-bottom: 70px;
 }
 
-.project-card.featured .project-number {
-  color: #572715;
-}
-
 .project-type {
-  color: #765847;
+  color: var(--orange);
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 2px;
   margin-bottom: 10px;
 }
 
-.project-card.featured .project-type {
-  color: #713018;
-}
-
 .project-card h3 {
   font-size: 28px;
   line-height: 1.15;
   margin-bottom: 15px;
+  color: var(--cream);
 }
 
 .project-card p:last-child {
-  color: #654d3e;
+  color: var(--brown-light);
   font-size: 15px;
   line-height: 1.7;
-}
-
-.project-card.featured p:last-child {
-  color: #63301e;
 }
 
 /* CONTACT */
@@ -401,29 +391,30 @@ section h2 span {
   margin: 80px 35px;
   padding: 90px 40px !important;
   border-radius: 24px;
-  background: #c65d2e;
-  color: var(--brown-dark);
+  background: var(--card-bg);
+  border: 1px solid var(--orange);
+  color: var(--cream);
   text-align: center;
 }
 
 #contact h2 {
-  color: var(--brown-dark);
+  color: var(--cream);
   margin-bottom: 25px;
 }
 
 #contact p {
   max-width: 550px;
   margin: 0 auto 30px;
-  color: #4f291c;
+  color: var(--brown-light);
 }
 
 #contact .section-label {
-  color: #54291b;
+  color: var(--orange);
 }
 
 #contact .primary-button {
-  background: var(--brown-dark);
-  color: var(--cream);
+  background: var(--orange);
+  color: var(--brown-dark);
 }
 
 #contact .primary-button:hover {
@@ -435,10 +426,10 @@ section h2 span {
 
 footer {
   padding: 30px 35px;
-  border-top: 1px solid #4b3328;
+  border-top: 1px solid var(--card-border);
   display: flex;
   justify-content: space-between;
-  color: #a99180;
+  color: var(--brown-light);
   font-size: 13px;
   background: var(--brown-dark);
 }
