@@ -11,12 +11,13 @@ function Home() {
             Mabel <span>Cobbinah</span>
           </h1>
 
-          <h2>Computer Science & Engineering Student • Web Developer</h2>
+          <h2>Computer Science & Engineering Graduate • AWS Certified Cloud Practitioner</h2>
 
           <p className="hero-description">
-            I am passionate about technology and building useful digital
-            solutions. This portfolio showcases my skills and projects for
-            recruiters, employers, and anyone interested in my work.
+            I build responsive web applications and secure cloud-based solutions. 
+            Combining a strong foundation in Python, Java, and MySQL with AWS cloud 
+            expertise, I transform complex problems into clean, functional code. 
+            I am actively seeking opportunities to contribute to innovative tech teams.
           </p>
 
           <div className="hero-buttons">
@@ -33,7 +34,7 @@ function Home() {
         <div className="hero-card">
           <div className="circle">MC</div>
 
-          <p>COMPUTER SCIENCE & ENGINEERING</p>
+          <p>CS GRADUATE • AWS CERTIFIED</p>
 
           <h3>
             Explore my work
@@ -43,7 +44,7 @@ function Home() {
 
           <div className="card-line"></div>
 
-          <small>Web Development • Technology • Software</small>
+          <small>Python • Java • AWS • React</small>
         </div>
       </section>
 
@@ -55,8 +56,11 @@ function Home() {
         <h2>What I work with.</h2>
 
         <div className="skills">
-          <span>HTML</span>
-          <span>CSS</span>
+          <span>Python</span>
+          <span>Java</span>
+          <span>MySQL</span>
+          <span>AWS</span>
+          <span>HTML/CSS</span>
           <span>JavaScript</span>
           <span>React</span>
           <span>Git & GitHub</span>
@@ -84,42 +88,50 @@ function Home() {
         <div className="projects">
           <article className="project-card featured">
             <p className="project-number">01</p>
-            <p className="project-type">WEB DEVELOPMENT</p>
-
-            <h3>Personal Portfolio</h3>
-
+            <p className="project-type">MACHINE LEARNING</p>
+            <h3>
+              <a href="/projects/crop-disease-detection">
+                Crop Disease Detection
+              </a>
+            </h3>
             <p>
-              A personal portfolio website built with React and Vite to
-              showcase my skills and projects.
+              Developed a machine learning model to identify and classify plant diseases 
+              from leaf images. Utilized Python and pre-trained deep learning models 
+              for accurate image processing.
             </p>
           </article>
 
           <article className="project-card">
             <p className="project-number">02</p>
-            <p className="project-type">SOFTWARE PROJECT</p>
-
-            <h3>EventFinder Management</h3>
-
+            <p className="project-type">CLOUD INFRASTRUCTURE</p>
+            <h3>AWS Cloud Deployment Lab</h3>
             <p>
-              A project focused on helping users find and manage events.
+              Deployed and configured core AWS services to understand cloud architecture. 
+              Set up EC2 virtual machines, configured S3 buckets for static website hosting, 
+              and implemented IAM security best practices.
             </p>
           </article>
 
           <article className="project-card">
-  <p className="project-number">03</p>
-  <p className="project-type">MACHINE LEARNING</p>
+            <p className="project-number">03</p>
+            <p className="project-type">SOFTWARE ENGINEERING</p>
+            <h3>Library Management System</h3>
+            <p>
+              Collaborated in a team to design and implement a desktop application to 
+              streamline library operations, including book cataloging and user check-outs. 
+              Built using Java and MySQL for relational database management.
+            </p>
+          </article>
 
-  <h3>
-    <a href="/projects/crop-disease-detection">
-      Crop Disease Detection
-    </a>
-  </h3>
-
-  <p>
-    A machine learning project focused on detecting crop diseases
-    using pretrained deep learning models.
-  </p>
-</article>
+          <article className="project-card">
+            <p className="project-number">04</p>
+            <p className="project-type">WEB DEVELOPMENT</p>
+            <h3>Course Registration Portal</h3>
+            <p>
+              Designed and built an interactive frontend website for student course 
+              registration. Implemented dynamic form validation using HTML, CSS, and JavaScript.
+            </p>
+          </article>
         </div>
       </section>
 
@@ -133,7 +145,7 @@ function Home() {
           opportunity, feel free to get in touch.
         </p>
 
-        <a href="mailto:your-email@example.com" className="primary-button">
+        <a href="mailto:mabelcobbinah211@gmail.com" className="primary-button">
           Contact Me
         </a>
       </section>
