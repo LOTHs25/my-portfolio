@@ -13,9 +13,11 @@ function About() {
 
       <div className="about-content">
         <p>
-          I am a Computer Science & Engineering student interested in
-          technology, web development, and creating solutions through
-          software.
+          I am a recent Computer Science & Engineering graduate specializing in 
+          web development and cloud solutions. I build responsive applications 
+          using Python, Java, and MySQL, and I hold an AWS Certified Cloud 
+          Practitioner credential. I am passionate about solving real-world 
+          problems through clean code and robust cloud infrastructure.
         </p>
       </div>
     </section>
