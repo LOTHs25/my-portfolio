@@ -3,15 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+:root {
+  --brown-dark: var(--brown-dark);
+  --cream: var(--cream);
+  --orange: var(--orange);
+  --brown-light: var(--brown-light);
+}
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #241814;
-  color: #f4e8d8;
+  background: var(--brown-dark);
+  color: var(--cream);
   line-height: 1.6;
 }
 
@@ -25,7 +30,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: #241814;
+  background: var(--brown-dark);
   border-bottom: 1px solid #4b3328;
 }
 
@@ -39,12 +44,12 @@ nav {
 }
 
 nav h2 {
-  color: #f4e8d8;
+  color: var(--cream);
   font-size: 25px;
 }
 
 nav h2 span {
-  color: #e8793f;
+  color: var(--orange);
 }
 
 .nav-links {
@@ -63,7 +68,7 @@ nav h2 span {
 }
 
 .nav-links a:hover {
-  color: #e8793f !important;
+  color: var(--orange) !important;
 }
 
 /* HERO */
@@ -77,11 +82,11 @@ nav h2 span {
   gap: 70px;
   background:
     radial-gradient(circle at 75% 30%, #493024 0, transparent 32%),
-    #241814;
+    var(--brown-dark);
 }
 
 .intro {
-  color: #e8793f;
+  color: var(--orange);
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 3px;
@@ -97,10 +102,10 @@ nav h2 span {
 }
 
 .hero h1 span {
-  color: #e8793f;
+  color: var(--orange);
 }
 .hero h2 {
-  color: #f4e8d8;
+  color: var(--cream);
   font-size: 32px;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -109,7 +114,7 @@ nav h2 span {
 
 .hero-description {
   max-width: 600px;
-  color: #cbb6a5;
+  color: var(--brown-light);
   font-size: 18px;
   margin-bottom: 35px;
 }
@@ -122,8 +127,8 @@ nav h2 span {
 
 .primary-button {
   display: inline-block;
-  background: #e8793f;
-  color: #241814;
+  background: var(--orange);
+  color: var(--brown-dark);
   padding: 14px 24px;
   border-radius: 7px;
   font-weight: 800;
@@ -136,7 +141,7 @@ nav h2 span {
 }
 
 .secondary-button {
-  color: #f4e8d8;
+  color: var(--cream);
   border: 1px solid #705040;
   padding: 13px 24px;
   border-radius: 7px;
@@ -144,8 +149,8 @@ nav h2 span {
 }
 
 .secondary-button:hover {
-  border-color: #e8793f;
-  color: #e8793f;
+  border-color: var(--orange);
+  color: var(--orange);
 }
 
 /* HERO CARD */
@@ -179,8 +184,8 @@ nav h2 span {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: #e8793f;
-  color: #241814;
+  background: var(--orange);
+  color: var(--brown-dark);
   font-size: 22px;
   font-weight: 800;
   margin-bottom: 80px;
@@ -216,7 +221,7 @@ section:not(.hero) {
 }
 
 .section-label {
-  color: #e8793f;
+  color: var(--orange);
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 2px;
@@ -224,14 +229,14 @@ section:not(.hero) {
 }
 
 section h2 {
-  color: #f4e8d8;
+  color: var(--cream);
   font-size: 50px;
   line-height: 1.05;
   letter-spacing: -2px;
 }
 
 section h2 span {
-  color: #e8793f;
+  color: var(--orange);
 }
 
 /* ABOUT */
@@ -247,12 +252,12 @@ section h2 span {
 }
 
 .about-content {
-  border-left: 2px solid #e8793f;
+  border-left: 2px solid var(--orange);
   padding-left: 40px;
 }
 
 .about-content p {
-  color: #cbb6a5;
+  color: var(--brown-light);
   font-size: 19px;
   line-height: 1.8;
   max-width: 600px;
@@ -303,7 +308,7 @@ section h2 span {
 /* PROJECTS */
 
 #projects {
-  background: #241814;
+  background: var(--brown-dark);
   border-top: 1px solid #4b3328;
 }
 
@@ -316,7 +321,7 @@ section h2 span {
 
 .projects-heading p {
   max-width: 350px;
-  color: #cbb6a5;
+  color: var(--brown-light);
 }
 
 .projects {
@@ -341,13 +346,13 @@ section h2 span {
 
 .project-card:hover {
   transform: translateY(-8px);
-  border-color: #e8793f;
+  border-color: var(--orange);
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
 }
 
 .project-card.featured {
-  background: #e8793f;
-  color: #241814;
+  background: var(--orange);
+  color: var(--brown-dark);
   grid-row: span 2;
 }
 
@@ -397,12 +402,12 @@ section h2 span {
   padding: 90px 40px !important;
   border-radius: 24px;
   background: #c65d2e;
-  color: #241814;
+  color: var(--brown-dark);
   text-align: center;
 }
 
 #contact h2 {
-  color: #241814;
+  color: var(--brown-dark);
   margin-bottom: 25px;
 }
 
@@ -417,13 +422,13 @@ section h2 span {
 }
 
 #contact .primary-button {
-  background: #241814;
-  color: #f4e8d8;
+  background: var(--brown-dark);
+  color: var(--cream);
 }
 
 #contact .primary-button:hover {
-  background: #f4e8d8;
-  color: #241814;
+  background: var(--cream);
+  color: var(--brown-dark);
 }
 
 /* FOOTER */
@@ -435,7 +440,7 @@ footer {
   justify-content: space-between;
   color: #a99180;
   font-size: 13px;
-  background: #241814;
+  background: var(--brown-dark);
 }
 
 /* MOBILE */
