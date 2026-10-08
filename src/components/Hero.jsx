@@ -1,43 +1,50 @@
- <section className="hero">
-          <div>
-            <p className="intro">HELLO, I'M</p>
+ function Hero() {
+  return (
+  <section className="hero">
+    <div>
+      <p className="intro">HELLO, I'M</p>
 
-            <h1>
-              Mabel <span>Cobbinah</span>
-            </h1>
+      <h1>
+        Mabel <span>Cobbinah</span>
+      </h1>
 
-            <h2>Computer Science & Engineering Student • Web Developer</h2>
+      <h2>Computer Science & Engineering Graduate • AWS Certified Cloud Practitioner</h2>
 
-            <p className="hero-description">
-              I am passionate about technology and building useful digital
-              solutions. This portfolio showcases my skills and projects for
-              recruiters, employers, and anyone interested in my work.
-            </p>
+      <p className="hero-description">
+        I build responsive web applications and secure cloud-based solutions. 
+        Combining a strong foundation in Python, Java, and MySQL with AWS cloud 
+        expertise, I transform complex problems into clean, functional code. 
+        I am actively seeking opportunities to contribute to innovative tech teams.
+      </p>
 
-            <div className="hero-buttons">
-              <a href="#projects" className="primary-button">
-                View My Projects
-              </a>
+      <div className="hero-buttons">
+        <a href="#projects" className="primary-button">
+          View My Projects
+        </a>
 
-              <a href="#contact" className="secondary-button">
-                Let's Connect
-              </a>
-            </div>
-          </div>
+        <a href="#contact" className="secondary-button">
+          Let's Connect
+        </a>
+      </div>
+    </div>
 
-          <div className="hero-card">
-            <div className="circle">MC</div>
+    <div className="hero-card">
+      <div className="circle">MC</div>
 
-            <p>COMPUTER SCIENCE & ENGINEERING</p>
+      <p>CS GRADUATE • AWS CERTIFIED</p>
 
-           <h3>
-            Explore my work
-          <br />
-          and let's connect.
-          </h3>
+      <h3>
+        Explore my work
+        <br />
+        and let's connect.
+      </h3>
 
-            <div className="card-line"></div>
+      <div className="card-line"></div>
 
-            <small>Web Development • Technology • Software</small>
-          </div>
-        </section>
+      <small>Python • Java • AWS • React</small>
+    </div>
+  </section>
+        )
+}
+
+export default Hero
